@@ -233,6 +233,7 @@ WHERE s1.plan_id = 2
 ---
 
 **5️⃣ What business l**
+
 ▢ They could do this by:  
 - 📚 Focusing on the quantity of the content available  
 - 🎯 Focusing on the quality of the content available  
