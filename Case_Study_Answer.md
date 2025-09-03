@@ -54,6 +54,8 @@ FROM subscriptions
 ```
 <img width="189" height="57" alt="image" src="https://github.com/user-attachments/assets/5cebf2fa-92f3-4ef9-9d52-b4acf86df870" />
 
+- total customer are 8.
+
  
 2.	What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value ?
 ```SQL
@@ -65,6 +67,9 @@ ORDER BY start_month
 ```
 <img width="263" height="245" alt="image" src="https://github.com/user-attachments/assets/ed82c48d-9a44-44a3-9640-793e04076971" />
 
+
+- All the months March, May, June, July, August, Seotember, October, Novermber and December have a count of 1.
+   
 3.	What plan start_date values occur after the year 2020 for our dataset? Show the breakdown by count of events for each plan_name
 ```SQL
 SELECT plan.plan_name, COUNT(*)
@@ -77,6 +82,7 @@ Order BY plan.plan_name
 ```
 <img width="263" height="60" alt="image" src="https://github.com/user-attachments/assets/5933d4b8-9574-4564-84e4-9b9ceded9925" />
 
+- The pro monhtly plan.
  
 4.	What is the customer count and percentage of customers who have churned rounded to 1 decimal place?
 ```SQL
@@ -91,6 +97,10 @@ FROM subscriptions;
 ```
 <img width="525" height="64" alt="image" src="https://github.com/user-attachments/assets/f321be66-d01f-4917-b452-122388b54bc3" />
 
+
+- Churn count is 2
+- Churn percentage is 10.
+
  
 5.	How many customers have churned straight after their initial free trial - what percentage is this rounded to the nearest whole number?
 ```SQL
@@ -103,6 +113,9 @@ ROUND(
 FROM subscriptions
 ```
 <img width="451" height="57" alt="image" src="https://github.com/user-attachments/assets/6f4cc7b6-9df1-4ac8-8279-6aca48d80d70" />
+
+- No. of churned customer is 2
+- Percentage is 10. 
 
  
 6.	What is the number and percentage of customer plans after their initial free trial?
@@ -128,6 +141,12 @@ ORDER BY plan_id;
 ```
 <img width="472" height="142" alt="image" src="https://github.com/user-attachments/assets/7d23c77e-8890-4e68-8fc7-daade9ed181f" />
 
+
+- Plan_id 1 has total customer 2 and the percenateg is 25
+- Plan_id 2 has total customer 3 and the percenateg is 37.5
+- Plan_id 3 has total customer 2 and the percenateg is 25
+- Plan_id 4 has total customer 1 and the percenateg is 12.5
+
  
 7.	What is the customer count and percentage breakdown of all 5 plan_name values at 2020-12-31?
 8.	How many customers have upgraded to an annual plan in 2020?
@@ -137,6 +156,8 @@ FROM subscriptions
 WHERE plan_id = 3 AND start_year = 2020
 ```
 <img width="198" height="59" alt="image" src="https://github.com/user-attachments/assets/2911b73d-12c4-4fef-b81f-ff9399a4b9ce" />
+
+- 3 customers upgraded to annual plan
 
 9.	How many days on average does it take for a customer to an annual plan from the day they join Foodie-Fi?
 ```SQL
@@ -153,6 +174,9 @@ FROM (
 WHERE annual_date IS NOT NULL;
  ```
 <img width="229" height="63" alt="image" src="https://github.com/user-attachments/assets/552d4771-7550-496b-970d-0497d2975464" />
+
+- On average it takes 72.6667 days.
+
 
 10.	Can you further breakdown this average value into 30 day periods (i.e. 0-30 days, 31-60 days etc)
 ```SQL
@@ -183,6 +207,10 @@ ORDER BY MIN(days_to_annual);
 ```
 <img width="326" height="117" alt="image" src="https://github.com/user-attachments/assets/c9aa58e2-58f5-4e81-ace0-79c58365b23a" />
 
+- 0-30 days has 1 ccustomer count.
+- 61-90 days has 1 customer count
+- 121-150 days has 1 customer count. 
+
 11.	How many customers downgraded from a pro monthly to a basic monthly plan in 2020?
 ```SQL
 SELECT 
@@ -198,6 +226,8 @@ WHERE s1.plan_id = 2
   AND s2.start_year = 2020;
 ```
 <img width="251" height="67" alt="image" src="https://github.com/user-attachments/assets/bbfa451a-3a4f-402a-ae16-26ea31c4987b" />
+
+- 0 customer downgraded 
 
 ## 💡 D. Outside The Box Questions  
 
