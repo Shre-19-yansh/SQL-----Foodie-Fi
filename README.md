@@ -50,12 +50,18 @@ During the data preparation process, the following tasks were performed:
 ---
 
 ## 🔄 Process  
-1. **Understand the schema** – Reviewed ERD and table structures (`plans`, `subscriptions`).
-   <img width="391" height="136" alt="image" src="https://github.com/user-attachments/assets/9cada03c-9920-40fe-9ae9-c851ae7b88c2" />
-3. **Identify data needs** – Focused on subscription journeys, churn rates, upgrades, and payments.  
-4. **Prepare the data** – Split dates, ensured consistent formats.  
-5. **Analyze with SQL** – Wrote queries to generate insights into customer behavior and business performance.  
-6. **Document findings** – Summarized results and insights in structured case study solutions.  
+1. **Understand the schema**
+- Reviewed ERD and table structures (`plans`, `subscriptions`).
+
+  <img width="391" height="136" alt="image" src="https://github.com/user-attachments/assets/9cada03c-9920-40fe-9ae9-c851ae7b88c2" />
+3. **Identify data needs**
+- Focused on subscription journeys, churn rates, upgrades, and payments.  
+4. **Prepare the data**
+- Split dates, ensured consistent formats.  
+5. **Analyze with SQL**
+- Wrote queries to generate insights into customer behavior and business performance.  
+6. **Document findings**
+- Summarized results and insights in structured case study solutions.  
 
 ---
 
